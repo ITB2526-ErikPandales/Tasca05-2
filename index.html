@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik - Home</title>
+    <link rel="stylesheet" href="./CSS/WebPage.css">
+    <style>
+        .card-img {
+            width: 100%;
+            aspect-ratio: 16 / 9; 
+            object-fit: contain; 
+            background-color: #f9f9f9; 
+            display: block;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        
+        .card h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Erik P.</div>
+            <button id="menu-btn" class="menu-toggle">MENU</button>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="./HTML/Projects.html">Projects</a></li>
+                    <li><a href="./HTML/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="modeToggle" class="mode-btn">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="./Multimedia/Imatges/Pollo.png" alt="Profile picture" class="profile-img">
+                <h1>Erik Pandales</h1>
+                <p class="subtitle">Cybersecurity Student</p>
+                <div class="info-badges">
+                    <span>18 years old</span>
+                    <span>Advanced Vocational Training ASIXcA</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid-layout">
+
+                <article class="card">
+                    <h3>BananaIA</h3>
+                    <img src="./Multimedia/Imatges/BananaIA.png" alt="[BananaIA Image]" class="card-img">
+                    <p>Computer vision system to analyze the ripening of tropical fruits and reduce food waste.</p>
+                    <a href="./HTML/Project1.html" class="btn">View Project</a>
+                </article>
+
+                <article class="card">
+                    <h3>SmartChef IA</h3>
+                    <img src="./Multimedia/Imatges/SmartChef.png" alt="[SmartChef IA Image]" class="card-img">
+                    <p>Intelligent culinary assistant that recognizes ingredients and generates personalized recipes.</p>
+                    <a href="./HTML/Project2.html" class="btn">View Details</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025/26 Erik Pandales - All rights reserved</p>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+
+    <link rel="stylesheet" href="../CSS/WebPage.css">
+    <style>
+    
+        .card-img {
+            width: 100%;
+            aspect-ratio: 16 / 9; 
+            object-fit: contain;  
+            background-color: #f4f4f4; 
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .card-header {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Erik P.</div>
+            <button id="menu-btn" class="menu-toggle">MENU</button>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../HTML/Projects.html" class="active">Projects</a></li>
+                    <li><a href="../HTML/Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="modeToggle" class="mode-btn">🌙</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Full Portfolio</h2>
+        <div class="grid-layout">
+
+            <article class="card">
+                <div class="card-header">
+                    <h3>BananaIA</h3>
+                    <span class="tag">Web + AI</span>
+                </div>
+                <img src="../Multimedia/Imatges/BananaIA.png" alt="[BananaIA Image]" class="card-img">
+                <p>Computer vision system to analyze the ripening of tropical fruits and reduce food waste.</p>
+                <a href="Project1.html" class="btn">Read more</a>
+            </article>
+
+
+            <article class="card">
+                <div class="card-header">
+                    <h3>SmartChef IA</h3>
+                    <span class="tag">AI + Gastronomy</span>
+                </div>
+                <img src="../Multimedia/Imatges/SmartChef.png" alt="[SmartChef IA Image]" class="card-img">
+                <p>Intelligent culinary assistant that recognizes ingredients and generates personalized recipes.</p>
+                <a href="../HTML/Project2.html" class="btn">Read more</a>
+            </article>
+
+            <article class="card upcoming">
+                <div class="card-header">
+                    <h3>CiberScan</h3>
+                    <span class="tag">Coming Soon</span>
+                </div>
+                <img src="../Multimedia/Imatges/CyberSecurity.png" alt="[Cybersecurity Image]" class="card-img" style="filter: grayscale(1);">
+                <p>Vulnerability analysis tool for local networks designed for educational environments.</p>
+                <button class="btn" disabled>In development</button>
+            </article>
+
+
+            <article class="card upcoming">
+                <div class="card-header">
+                    <h3>DomotiX</h3>
+                    <span class="tag">Coming Soon</span>
+                </div>
+                <img src="../Multimedia/Imatges/DomotiX.png" alt="[IoT Image]" class="card-img" style="filter: grayscale(1);">
+                <p>IoT device management using encrypted voice commands for maximum privacy.</p>
+                <button class="btn" disabled>In development</button>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>2025/26 Erik Pandales - All rights reserved</p>
+    </footer>
+
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
